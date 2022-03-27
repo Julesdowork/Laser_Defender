@@ -150,8 +150,11 @@ MonoBehaviour:
   isFiring: 0
   projectilePrefab: {fileID: 4245731637963453594, guid: 3ff07e086ecb45b43a79af7372e0828c, type: 3}
   projectileSpeed: 15
-  fireRate: 5
+  baseFireRate: 0.2
   projectileLifetime: 5
+  useAI: 0
+  fireRateVariance: 0
+  minFireRate: 0
 --- !u!1 &3842592225472184392
 GameObject:
   m_ObjectHideFlags: 0
