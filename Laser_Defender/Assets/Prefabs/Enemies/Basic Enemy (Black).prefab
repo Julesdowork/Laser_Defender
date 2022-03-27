@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5622316192800472256}
   - component: {fileID: 5988918637350888917}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 1908664875153738492}
   - component: {fileID: 6430142842835131208}
   - component: {fileID: 2862524012742633186}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Basic Enemy (Black)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
