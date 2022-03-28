@@ -9,16 +9,19 @@ public class Health : MonoBehaviour
     [SerializeField] int score = 50;
     [SerializeField] ParticleSystem hitEffect;
     [SerializeField] bool applyCameraShake;
+    [SerializeField] float gameOverDelay = 3f;
 
     CameraShake cameraShake;
     AudioManager audioManager;
     ScoreKeeper scoreKeeper;
+    LevelManager levelManager;
 
     void Awake()
     {
         cameraShake = Camera.main.GetComponent<CameraShake>();
         audioManager = FindObjectOfType<AudioManager>();
         scoreKeeper = FindObjectOfType<ScoreKeeper>();
+        levelManager = FindObjectOfType<LevelManager>();
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -58,6 +61,7 @@ public class Health : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            levelManager.LoadGameOver();
         }
     }
 
