@@ -55,6 +55,10 @@ public class Health : MonoBehaviour
             scoreKeeper.SetScore(score);
             Destroy(gameObject);
         }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void PlayHitEffect()

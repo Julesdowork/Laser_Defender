@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 4026343}
   - component: {fileID: 4026342}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Score Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0.5
+  m_Value: 0.542
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -571,6 +571,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1036995828 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1452581951959683139, guid: 392249ed00e2bc04d9586d1df4e3cb95, type: 3}
+  m_PrefabInstance: {fileID: 5326434510461155384}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54728b64e14086046b39d9587d1998b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1112509478
 GameObject:
   m_ObjectHideFlags: 0
@@ -583,6 +594,7 @@ GameObject:
   - component: {fileID: 1112509481}
   - component: {fileID: 1112509480}
   - component: {fileID: 1112509479}
+  - component: {fileID: 1112509483}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -672,6 +684,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1112509483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112509478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 894b351b3ac4b5a49b03ba0b1c7fbc6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthSlider: {fileID: 311123375}
+  playerHealth: {fileID: 1036995828}
+  scoreText: {fileID: 4026342}
 --- !u!1 &1194509662
 GameObject:
   m_ObjectHideFlags: 0
@@ -706,8 +733,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -5, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1212286508
 GameObject:
@@ -745,7 +772,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 10, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1212286510
 MonoBehaviour:
