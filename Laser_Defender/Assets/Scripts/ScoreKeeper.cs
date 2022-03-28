@@ -4,7 +4,33 @@ using UnityEngine;
 
 public class ScoreKeeper : MonoBehaviour
 {
+    static ScoreKeeper instance;
+
     int score;
+
+    void Awake()
+    {
+        ManageSingleton();
+    }
+
+    private void ManageSingleton()
+    {
+        if (instance != null)
+        {
+            gameObject.SetActive(false);
+            Destroy(gameObject);
+        }
+        else
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+    }
+
+    public ScoreKeeper GetInstance()
+    {
+        return instance;
+    }
 
     public int GetScore()
     {

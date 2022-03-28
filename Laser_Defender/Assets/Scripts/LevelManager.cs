@@ -6,6 +6,14 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] float sceneLoadDelay = 3f;
+
+    ScoreKeeper scoreKeeper;
+
+    void Awake()
+    {
+        scoreKeeper = FindObjectOfType<ScoreKeeper>();
+    }
+
     public void LoadMainMenu()
     {
         SceneManager.LoadScene("MainMenu");
@@ -13,6 +21,7 @@ public class LevelManager : MonoBehaviour
 
     public void LoadGame()
     {
+        scoreKeeper.ResetScore();
         SceneManager.LoadScene("Game");
     }
     
